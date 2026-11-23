@@ -1,0 +1,209 @@
+/* Zona Ekonomi: responsive.css
+   Every media query of the theme. Loaded last. */
+
+/* Tablet and below: two-column grids. */
+@media (max-width: 1023px) {
+	.ze-grid {
+		--ze-cols: 2;
+	}
+
+	.entry-layout--sidebar {
+		grid-template-columns: minmax(0, 1fr) 280px;
+	}
+
+	.site-footer__grid {
+		grid-template-columns: 1fr 1fr;
+	}
+
+	.site-footer__brand {
+		grid-column: 1 / -1;
+	}
+}
+
+/* Navigation collapses, two-column blocks stack. */
+@media (max-width: 899px) {
+	.admin-bar.ze-sticky-header .site-header {
+		top: 46px;
+	}
+
+	.admin-bar .ze-progress {
+		top: 46px;
+	}
+
+	/* Without JavaScript the menu simply wraps under the logo. */
+	.site-header__bar {
+		flex-wrap: wrap;
+		gap: 0 16px;
+	}
+
+	.primary-nav {
+		order: 3;
+		flex: 1 0 100%;
+		padding-bottom: 12px;
+	}
+
+	.primary-nav .menu {
+		justify-content: flex-start;
+	}
+
+	.site-header__tools {
+		margin-left: auto;
+	}
+
+	.js .menu-toggle {
+		display: inline-flex;
+	}
+
+	.js .primary-nav {
+		position: absolute;
+		top: 100%;
+		right: 0;
+		left: 0;
+		z-index: 60;
+		display: none;
+		max-height: calc(100vh - 100%);
+		padding: 4px var(--ze-gutter) 20px;
+		overflow-y: auto;
+		border-top: 1px solid rgba(255, 255, 255, 0.16);
+		background: var(--ze-header-bg);
+	}
+
+	.js .site-header.is-open .primary-nav {
+		display: block;
+	}
+
+	.js .ze-mobile-nav--fullscreen .site-header.is-open .primary-nav {
+		height: calc(100vh - 100%);
+		height: calc(100dvh - 100%);
+		max-height: none;
+	}
+
+	.ze-nav-open .ze-mobile-nav--fullscreen {
+		overflow: hidden;
+	}
+
+	.primary-nav .menu {
+		flex-direction: column;
+		align-items: stretch;
+	}
+
+	.primary-nav a {
+		padding: 0.85rem 0;
+		border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+		font-size: 1.05rem;
+	}
+
+	.primary-nav .sub-menu {
+		position: static;
+		display: block;
+		min-width: 0;
+		padding: 0 0 0 1rem;
+		border: 0;
+		background: transparent;
+	}
+
+	.featured__inner {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.featured__media {
+		order: -1;
+	}
+
+	.catsec {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.entry-layout--sidebar {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.entry-sidebar {
+		padding-top: 2rem;
+		border-top: 1px solid var(--ze-line);
+	}
+}
+
+/* Mobile: single column. */
+@media (max-width: 639px) {
+	.ze-grid {
+		--ze-cols: 1;
+	}
+
+	.hero__media {
+		aspect-ratio: 4 / 3;
+	}
+
+	.hero__summary {
+		font-size: 1.08rem;
+	}
+
+	.rank-list {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.section__head {
+		margin-bottom: 1.25rem;
+	}
+
+	.site-footer__grid {
+		grid-template-columns: minmax(0, 1fr);
+	}
+
+	.card-list--thumb {
+		grid-template-columns: 96px minmax(0, 1fr);
+		gap: 0.85rem;
+	}
+
+	.entry-thumb {
+		padding-inline: 0;
+	}
+
+	.entry-thumb figcaption {
+		padding-inline: var(--ze-gutter);
+	}
+
+	.entry-content {
+		font-size: 1.02rem;
+	}
+
+	.entry-content h2 {
+		font-size: 1.5rem;
+	}
+
+	.entry-content h3 {
+		font-size: 1.25rem;
+	}
+
+	.entry-content .alignleft,
+	.entry-content .alignright {
+		float: none;
+		display: block;
+		margin-inline: auto;
+	}
+
+	.comment-list .children {
+		padding-left: 0.75rem;
+	}
+
+	.breadcrumb__item:last-child {
+		flex-basis: 100%;
+	}
+
+	.breadcrumb__item:last-child::before {
+		display: none;
+	}
+}
+
+/* Wider screens: floated images. */
+@media (min-width: 640px) {
+	.entry-content .alignleft {
+		float: left;
+		margin: 0.3em 1.5em 1em 0;
+	}
+
+	.entry-content .alignright {
+		float: right;
+		margin: 0.3em 0 1em 1.5em;
+	}
+}

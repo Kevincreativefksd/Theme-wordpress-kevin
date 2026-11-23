@@ -1,0 +1,483 @@
+# Copyright (C) 2026 Zona Ekonomi
+# This file is distributed under the GPL-2.0-or-later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Zona Ekonomi 1.0.0\n"
+"Report-Msgid-Bugs-To: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: id_ID\n"
+"X-Domain: zona-ekonomi\n"
+
+#: template-parts/content/archive-header.php
+msgid "%s artikel"
+msgid_plural "%s artikel"
+msgstr[0] ""
+
+#: comments.php inc/template-tags.php
+msgid "%s komentar"
+msgid_plural "%s komentar"
+msgstr[0] ""
+
+#: inc/template-tags.php
+msgid "%s menit baca"
+msgid_plural "%s menit baca"
+msgstr[0] ""
+
+#: inc/customizer.php
+msgid "2 kolom"
+msgstr ""
+
+#: inc/customizer.php
+msgid "3 kolom"
+msgstr ""
+
+#: inc/customizer.php
+msgid "4 kolom"
+msgstr ""
+
+#: inc/customizer.php
+msgid "A: Minimalist (satu kolom)"
+msgstr ""
+
+#: inc/setup.php
+msgid "Abu-abu"
+msgstr ""
+
+#: inc/setup.php
+msgid "Aksen"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Aktifkan sidebar (khusus layout B)"
+msgstr ""
+
+#: 404.php
+msgid "Alamat yang Anda tuju tidak tersedia atau sudah dipindahkan. Coba cari artikel yang Anda butuhkan."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Artikel"
+msgstr ""
+
+#: template-parts/homepage/popular.php
+msgid "Artikel Populer"
+msgstr ""
+
+#: 404.php inc/template-functions.php sidebar.php template-parts/homepage/latest.php
+msgid "Artikel Terbaru"
+msgstr ""
+
+#: template-parts/content/related.php
+msgid "Artikel Terkait"
+msgstr ""
+
+#: template-parts/homepage/featured.php
+msgid "Artikel pilihan"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Artikel terbaru"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Artikel terkait"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Artikel unggulan"
+msgstr ""
+
+#: template-parts/homepage/hero.php
+msgid "Artikel utama"
+msgstr ""
+
+#: inc/customizer.php
+msgid "B: Editorial (judul besar, sidebar opsional)"
+msgstr ""
+
+#: template-parts/homepage/hero.php
+msgid "Baca artikel"
+msgstr ""
+
+#: template-parts/content/none.php
+msgid "Belum ada artikel di sini."
+msgstr ""
+
+#: template-parts/content/none.php
+msgid "Belum ada artikel yang dipublikasikan. <a href=\"%s\">Tulis artikel pertama Anda</a>."
+msgstr ""
+
+#: inc/customizer-controls.php
+msgid "Belum ada kategori."
+msgstr ""
+
+#: inc/breadcrumbs.php inc/customizer.php inc/template-tags.php
+msgid "Beranda"
+msgstr ""
+
+#: template-parts/content/loop.php
+msgid "Berikutnya"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Berlaku juga untuk halaman arsip. Tablet selalu 2 kolom dan mobile 1 kolom."
+msgstr ""
+
+#: inc/breadcrumbs.php
+msgid "Breadcrumb"
+msgstr ""
+
+#: searchform.php template-parts/header/site-header.php
+msgid "Cari"
+msgstr ""
+
+#: searchform.php
+msgid "Cari artikel"
+msgstr ""
+
+#: searchform.php
+msgctxt "placeholder"
+msgid "Cari artikel…"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Daftar isi"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Daftar isi otomatis (heading H2 dan H3)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Deskripsi brand"
+msgstr ""
+
+#: inc/template-tags.php
+msgid "Diperbarui"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Ditampilkan di footer."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Dropdown di bawah header"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Font isi"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Font judul"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Footer"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Gaya navigasi mobile"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Gelap"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Gunakan {year} untuk tahun berjalan dan {site} untuk nama situs."
+msgstr ""
+
+#: page.php template-parts/content/single.php template-parts/footer/site-footer.php
+msgid "Halaman"
+msgstr ""
+
+#: 404.php
+msgid "Halaman tidak ditemukan"
+msgstr ""
+
+#: inc/template-functions.php
+msgid "Hasil pencarian: %s"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Header"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Header menempel saat halaman digulir"
+msgstr ""
+
+#: inc/setup.php
+msgid "Hitam"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Ikuti pengaturan perangkat pengunjung"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Jika artikel dihapus atau tidak dipublikasikan, tema memakai artikel terbaru."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Jumlah artikel pada grid \"Artikel Terbaru\""
+msgstr ""
+
+#: inc/customizer.php
+msgid "Jumlah kolom grid (desktop)"
+msgstr ""
+
+#: template-parts/footer/site-footer.php template-parts/navigation/category-nav.php
+msgid "Kategori"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Kategori pada navigasi kategori"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Kategori yang tampil sebagai section sendiri"
+msgstr ""
+
+#: attachment.php
+msgid "Kembali ke “%s”"
+msgstr ""
+
+#: comments.php
+msgid "Komentar ditutup."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Layar penuh"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Layout artikel"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Lebar logo (px)"
+msgstr ""
+
+#: header.php
+msgid "Lewati ke konten"
+msgstr ""
+
+#: template-parts/homepage/category-section.php template-parts/homepage/latest.php
+msgid "Lihat semua"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Maksimal 4 kategori. Tidak ada yang dicentang: section tidak tampil."
+msgstr ""
+
+#: template-parts/footer/site-footer.php
+msgid "Media sosial"
+msgstr ""
+
+#: template-parts/header/site-header.php
+msgid "Menu"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Metadata: estimasi waktu baca"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Metadata: nama penulis"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Metadata: tanggal diperbarui"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Metadata: tanggal terbit"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Mode warna"
+msgstr ""
+
+#: inc/setup.php
+msgid "Navigasi footer"
+msgstr ""
+
+#: template-parts/content/loop.php
+msgid "Navigasi halaman artikel"
+msgstr ""
+
+#: template-parts/header/site-header.php
+msgid "Navigasi sekunder"
+msgstr ""
+
+#: inc/setup.php
+msgid "Navigasi sekunder (di bawah header)"
+msgstr ""
+
+#: inc/setup.php template-parts/header/site-header.php
+msgid "Navigasi utama"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Pengaturan tema Zona Ekonomi. Logo dan ikon situs diatur di \"Identitas Situs\"; menu diatur di \"Menu\"."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Pilih manual"
+msgstr ""
+
+#: template-parts/homepage/editors-pick.php
+msgid "Pilihan Editor"
+msgstr ""
+
+#: inc/setup.php
+msgid "Putih"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Reading progress bar"
+msgstr ""
+
+#: inc/options.php
+msgid "Ruang literasi ekonomi: informasi, analisis, dan edukasi seputar ekonomi, bisnis, keuangan, dan investasi."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Sans-serif sistem"
+msgstr ""
+
+#: template-parts/content/loop.php
+msgid "Sebelumnya"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Artikel per kategori"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Artikel populer (berdasarkan jumlah komentar)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Artikel terbaru"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Artikel unggulan dua kolom"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Hero (artikel unggulan)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Navigasi kategori"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Section: Pilihan editor (artikel yang di-\"sticky\")"
+msgstr ""
+
+#: template-parts/navigation/category-nav.php
+msgid "Semua"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Serif sistem"
+msgstr ""
+
+#: template-parts/content/single.php
+msgid "Sidebar"
+msgstr ""
+
+#: inc/setup.php
+msgid "Sidebar artikel"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Sumber artikel unggulan (hero)"
+msgstr ""
+
+#: page.php template-parts/content/single.php
+msgid "Sunting"
+msgstr ""
+
+#: inc/setup.php
+msgid "Tampil pada layout artikel B (Editorial) jika sidebar diaktifkan. Jika kosong, tema menampilkan daftar artikel terbaru."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Tampilan: mode, warna, tipografi"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Tampilkan tombol pencarian"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Teks copyright"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Terang"
+msgstr ""
+
+#: template-parts/content/none.php
+msgid "Tidak ada artikel yang cocok dengan kata kunci tersebut. Coba kata kunci lain yang lebih umum."
+msgstr ""
+
+#: inc/customizer.php
+msgid "Tidak ada yang dicentang: tema menampilkan 8 kategori dengan artikel terbanyak."
+msgstr ""
+
+#: comments.php
+msgid "Tinggalkan komentar"
+msgstr ""
+
+#: inc/customizer.php
+msgid "URL %s"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Ukuran teks dasar (px)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Umum"
+msgstr ""
+
+#: attachment.php
+msgid "Unduh berkas"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Warna aksen (tautan dan kategori)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Warna header, footer, dan hero"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Warna latar (mode terang)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Warna teks (mode terang)"
+msgstr ""
+
+#: inc/customizer.php
+msgid "Zona Ekonomi"
+msgstr ""
+
+#: inc/options.php
+msgid "© {year} {site}. Seluruh hak cipta dilindungi."
+msgstr ""
+
+#: inc/customizer.php
+msgid "— Pilih artikel —"
+msgstr ""

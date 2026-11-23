@@ -1,0 +1,467 @@
+/* Zona Ekonomi: main.css
+   Tokens, base, layout, header, footer, utilities. */
+
+:root {
+	--ze-bg: #fff;
+	--ze-text: #111;
+	--ze-header-bg: #000;
+	--ze-header-text: #fff;
+	--ze-header-muted: #bdbdbd;
+	--ze-accent: #0a4fd8;
+	--ze-accent-inv: #84a7eb;
+	--ze-muted: #666;
+	--ze-line: #dedede;
+	--ze-surface: #f5f5f3;
+	--ze-font-head: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	--ze-font-body: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+	--ze-fs: 17px;
+	--ze-logo-w: 160px;
+	--ze-container: 1200px;
+	--ze-gutter: clamp(16px, 4vw, 32px);
+	--ze-entry: 720px;
+	--ze-wide: 1040px;
+	--ze-space: clamp(36px, 5vw, 72px);
+	color-scheme: light;
+}
+
+@supports (color: color-mix(in srgb, red 50%, blue)) {
+	:root {
+		--ze-muted: color-mix(in srgb, var(--ze-text) 62%, var(--ze-bg));
+		--ze-line: color-mix(in srgb, var(--ze-text) 14%, var(--ze-bg));
+		--ze-surface: color-mix(in srgb, var(--ze-text) 4%, var(--ze-bg));
+		--ze-header-muted: color-mix(in srgb, var(--ze-header-text) 72%, var(--ze-header-bg));
+	}
+}
+
+/* Base */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: var(--ze-fs);
+	-webkit-text-size-adjust: 100%;
+	scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	margin: 0;
+	background: var(--ze-bg);
+	color: var(--ze-text);
+	font-family: var(--ze-font-body);
+	line-height: 1.6;
+	-webkit-font-smoothing: antialiased;
+}
+
+.site-main {
+	flex: 1 0 auto;
+	width: 100%;
+}
+
+.site-main:focus {
+	outline: none;
+}
+
+img,
+svg,
+video,
+iframe {
+	max-width: 100%;
+}
+
+img {
+	height: auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	font-family: var(--ze-font-head);
+	line-height: 1.2;
+	overflow-wrap: break-word;
+	text-wrap: balance;
+}
+
+p {
+	margin: 0 0 1em;
+}
+
+a {
+	color: inherit;
+}
+
+:focus-visible {
+	outline: 2px solid var(--ze-accent);
+	outline-offset: 2px;
+}
+
+.site-header :focus-visible,
+.site-footer :focus-visible,
+.section--invert :focus-visible,
+.hero :focus-visible {
+	outline-color: var(--ze-accent-inv);
+}
+
+[hidden] {
+	display: none !important;
+}
+
+.screen-reader-text {
+	position: absolute !important;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	padding: 0;
+	overflow: hidden;
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	word-wrap: normal !important;
+}
+
+.screen-reader-text:focus {
+	top: 8px;
+	left: 8px;
+	z-index: 100000;
+	display: block;
+	width: auto;
+	height: auto;
+	padding: 12px 20px;
+	background: #fff;
+	clip: auto !important;
+	clip-path: none;
+	color: #111;
+	font-weight: 700;
+	line-height: normal;
+	text-decoration: none;
+}
+
+/* Layout */
+.container {
+	width: 100%;
+	max-width: calc(var(--ze-container) + 2 * var(--ze-gutter));
+	margin-inline: auto;
+	padding-inline: var(--ze-gutter);
+}
+
+.section {
+	padding-block: var(--ze-space);
+}
+
+/* Buttons */
+.btn {
+	display: inline-flex;
+	align-items: center;
+	min-height: 44px;
+	padding: 0.55rem 1.25rem;
+	border: 1px solid var(--ze-text);
+	background: var(--ze-text);
+	color: var(--ze-bg);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.btn:hover {
+	background: transparent;
+	color: var(--ze-text);
+}
+
+.btn--light {
+	border-color: var(--ze-header-text);
+	background: var(--ze-header-text);
+	color: var(--ze-header-bg);
+}
+
+.btn--light:hover {
+	background: transparent;
+	color: var(--ze-header-text);
+}
+
+/* Header */
+.site-header {
+	position: relative;
+	z-index: 50;
+	background: var(--ze-header-bg);
+	color: var(--ze-header-text);
+}
+
+.ze-sticky-header .site-header {
+	position: sticky;
+	top: 0;
+}
+
+.admin-bar.ze-sticky-header .site-header {
+	top: 32px;
+}
+
+.site-header__bar {
+	display: flex;
+	align-items: center;
+	gap: 24px;
+	min-height: 68px;
+}
+
+.site-branding {
+	flex: 0 0 auto;
+	min-width: 0;
+}
+
+.site-title {
+	display: inline-block;
+	color: inherit;
+	font-family: var(--ze-font-head);
+	font-size: 1.4rem;
+	font-weight: 800;
+	letter-spacing: -0.02em;
+	line-height: 1.1;
+	text-decoration: none;
+}
+
+.site-logo {
+	line-height: 0;
+}
+
+.site-logo .custom-logo-link {
+	display: inline-block;
+}
+
+.site-logo .custom-logo {
+	width: var(--ze-logo-w);
+	max-width: 100%;
+	height: auto;
+}
+
+.primary-nav {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+.menu,
+.footer-menu {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.primary-nav .menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-end;
+	gap: 0 0.25rem;
+}
+
+.menu li {
+	position: relative;
+}
+
+.primary-nav a,
+.secondary-nav a {
+	display: block;
+	padding: 0.6rem 0.8rem;
+	color: inherit;
+	font-size: 0.92rem;
+	font-weight: 600;
+	text-decoration: none;
+}
+
+.primary-nav a:hover,
+.secondary-nav a:hover,
+.primary-nav [aria-current="page"] {
+	text-decoration: underline;
+	text-underline-offset: 6px;
+	text-decoration-thickness: 2px;
+}
+
+.primary-nav .sub-menu {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 5;
+	display: none;
+	min-width: 210px;
+	margin: 0;
+	padding: 0.4rem 0;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	background: var(--ze-header-bg);
+	list-style: none;
+}
+
+.primary-nav li:hover > .sub-menu,
+.primary-nav li:focus-within > .sub-menu {
+	display: block;
+}
+
+.primary-nav .menu > li:last-child > .sub-menu {
+	right: 0;
+	left: auto;
+}
+
+.site-header__tools {
+	display: flex;
+	flex: 0 0 auto;
+	align-items: center;
+	gap: 4px;
+}
+
+.icon-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	color: inherit;
+	cursor: pointer;
+}
+
+.icon-btn:hover {
+	background: rgba(255, 255, 255, 0.12);
+}
+
+.menu-toggle {
+	display: none;
+	flex-direction: column;
+	gap: 5px;
+}
+
+.menu-toggle__bar {
+	display: block;
+	width: 22px;
+	height: 2px;
+	background: currentColor;
+}
+
+.secondary-nav {
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.secondary-nav .menu {
+	display: flex;
+	gap: 0.25rem;
+	overflow-x: auto;
+	scrollbar-width: none;
+}
+
+.secondary-nav a {
+	padding-block: 0.7rem;
+	color: var(--ze-header-muted);
+	font-size: 0.85rem;
+	white-space: nowrap;
+}
+
+.secondary-nav a:hover {
+	color: var(--ze-header-text);
+}
+
+.search-panel {
+	padding-block: 14px;
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.js .search-panel {
+	display: none;
+}
+
+.js .search-panel.is-open {
+	display: block;
+}
+
+.search-panel .search-form {
+	border-color: var(--ze-header-text);
+}
+
+.search-panel .search-form__input {
+	color: var(--ze-header-text);
+}
+
+.search-panel .search-form__input::placeholder {
+	color: var(--ze-header-muted);
+}
+
+.search-panel .search-form__submit {
+	background: var(--ze-header-text);
+	color: var(--ze-header-bg);
+}
+
+/* Footer */
+.site-footer {
+	margin-top: auto;
+	background: var(--ze-header-bg);
+	color: var(--ze-header-text);
+}
+
+.site-footer__grid {
+	display: grid;
+	grid-template-columns: 1.6fr 1fr 1fr;
+	gap: clamp(28px, 5vw, 64px);
+	padding-block: clamp(36px, 5vw, 64px);
+}
+
+.site-footer__desc {
+	max-width: 42ch;
+	margin: 1rem 0 0;
+	color: var(--ze-header-muted);
+	font-size: 0.95rem;
+}
+
+.footer-title {
+	margin-bottom: 0.9rem;
+	color: var(--ze-header-muted);
+	font-family: var(--ze-font-body);
+	font-size: 0.85rem;
+	font-weight: 600;
+}
+
+.footer-menu a,
+.social-list a {
+	display: inline-block;
+	padding-block: 0.3rem;
+	color: inherit;
+	text-decoration: none;
+}
+
+.footer-menu a:hover,
+.social-list a:hover {
+	text-decoration: underline;
+	text-underline-offset: 4px;
+}
+
+.social-list {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0 1.25rem;
+	margin: 1.25rem 0 0;
+	padding: 0;
+	list-style: none;
+	font-size: 0.92rem;
+}
+
+.site-footer__bottom {
+	padding-block: 1.25rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.16);
+}
+
+.site-info {
+	margin: 0;
+	color: var(--ze-header-muted);
+	font-size: 0.85rem;
+}
+
+.site-info a {
+	color: inherit;
+}
